@@ -14,7 +14,7 @@ public class MoviesListAdapter extends ArrayAdapter<Movie> {
     private Context context;
 
     public MoviesListAdapter(Context context, ArrayList<Movie> movies) {
-        super(context, R.layout.movie_item, movies); // Используйте R.layout.movie_item здесь
+        super(context, R.layout.movie_item, movies);
         this.movies = movies;
         this.context = context;
     }
@@ -23,17 +23,14 @@ public class MoviesListAdapter extends ArrayAdapter<Movie> {
     public View getView(int position, View convertView, ViewGroup parent) {
         Movie currentMovie = this.movies.get(position);
 
-        // Используйте convertView для повторного использования существующих представлений
         if (convertView == null) {
             LayoutInflater inflater = LayoutInflater.from(this.context);
             convertView = inflater.inflate(R.layout.movie_item, parent, false);
         }
 
-        TextView tvTitle = convertView.findViewById(R.id.tvTitle); // Измените на R.id.tvTitle
-        // TextView tvYear = convertView.findViewById(R.id.tvYear); // Раскомментируйте, если нужно использовать год
-        // tvYear.setText(String.valueOf(currentMovie.getReleaseYear())); // Установите год выпуска
+        TextView tvTitle = convertView.findViewById(R.id.tvTitle);
 
-        tvTitle.setText(currentMovie.getTitle()); // Установите название фильма
+        tvTitle.setText(currentMovie.getTitle());
 
         return convertView;
     }

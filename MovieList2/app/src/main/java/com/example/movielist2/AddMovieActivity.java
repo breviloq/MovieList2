@@ -30,7 +30,7 @@ public class AddMovieActivity extends AppCompatActivity {
 
                 if (title.isEmpty() || yearString.isEmpty()) {
                     Toast.makeText(AddMovieActivity.this, "Фильм не добавлен", Toast.LENGTH_SHORT).show();
-                    finish(); // Закрыть активность, не добавляя фильм
+                    finish();
                     return;
                 }
 

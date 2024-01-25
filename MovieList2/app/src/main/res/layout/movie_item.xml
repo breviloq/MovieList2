@@ -15,7 +15,6 @@
         android:textStyle="bold"
         android:textColor="@android:color/black" />
 
-    <!-- Раскомментируйте, если вы хотите отображать год выпуска фильма -->
         <TextView
         android:id="@+id/tvYear"
         android:layout_width="wrap_content"

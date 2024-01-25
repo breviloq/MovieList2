@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int ADD_MOVIE_REQUEST = 1;
     private static final int EDIT_MOVIE_REQUEST = 2;
 
-    public static ArrayList<Movie> movieList; // Сделаем список публичным для доступа из EditMovieActivity
+    public static ArrayList<Movie> movieList;
     private ArrayAdapter<Movie> adapter;
     private ListView listView;
 

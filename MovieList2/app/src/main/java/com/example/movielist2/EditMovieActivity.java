@@ -36,7 +36,6 @@ public class EditMovieActivity extends AppCompatActivity {
                     String yearString = yearEditText.getText().toString().trim();
 
                     if (title.isEmpty() || yearString.isEmpty()) {
-                        // Показать сообщение об ошибке, если одно из полей пустое
                         Toast.makeText(EditMovieActivity.this, "Пожалуйста, заполните все поля", Toast.LENGTH_SHORT).show();
                         return;
                     }
