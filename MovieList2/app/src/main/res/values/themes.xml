@@ -2,8 +2,12 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.MovieList2" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/teal_700</item>
+        <item name="colorPrimaryVariant">@color/teal_700</item>
+        <item name="colorOnPrimary">@android:color/white</item>
     </style>
 
-    <style name="Theme.MovieList2" parent="Base.Theme.MovieList2" />
+    <style name="Theme.MovieList2" parent="Base.Theme.MovieList2">
+        <!-- Here you can add other customizations specific to the app theme if needed -->
+    </style>
 </resources>
