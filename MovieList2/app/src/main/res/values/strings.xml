@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MovieList2</string>
+    <string name="menu_add_title">Добавить</string>
+    <string name="context_menu_edit">Редактировать</string>
+    <string name="context_menu_delete">Удалить</string>
+    <string name="context_menu_title">Действия</string>
+</resources>
